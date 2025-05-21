@@ -1,0 +1,77 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"linkReferences": {},
+			"object": "6055604b600b8282823980515f1a607314603f577f4e487b71000000000000000000000000000000000000000000000000000000005f525f60045260245ffd5b305f52607381538281f3fe730000000000000000000000000000000000000000301460806040525f5ffdfea2646970667358221220d3e4eb3b29865b93098edddab716b2c55d231b3b2299f2be7a04b1cf5b95b25764736f6c634300081e0033",
+			"opcodes": "PUSH1 0x55 PUSH1 0x4B PUSH1 0xB DUP3 DUP3 DUP3 CODECOPY DUP1 MLOAD PUSH0 BYTE PUSH1 0x73 EQ PUSH1 0x3F JUMPI PUSH32 0x4E487B7100000000000000000000000000000000000000000000000000000000 PUSH0 MSTORE PUSH0 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH0 REVERT JUMPDEST ADDRESS PUSH0 MSTORE PUSH1 0x73 DUP2 MSTORE8 DUP3 DUP2 RETURN INVALID PUSH20 0x0 ADDRESS EQ PUSH1 0x80 PUSH1 0x40 MSTORE PUSH0 PUSH0 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xD3 RETF 0xEB EXTCODESIZE 0x29 DUP7 JUMPDEST SWAP4 MULMOD DUP15 0xDD 0xDA 0xB7 AND 0xB2 0xC5 TSTORE 0x23 SHL EXTCODESIZE 0x22 SWAP10 CALLCODE 0xBE PUSH27 0x4B1CF5B95B25764736F6C634300081E0033000000000000000000 ",
+			"sourceMap": "1120:18220:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"
+		},
+		"deployedBytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "730000000000000000000000000000000000000000301460806040525f5ffdfea2646970667358221220d3e4eb3b29865b93098edddab716b2c55d231b3b2299f2be7a04b1cf5b95b25764736f6c634300081e0033",
+			"opcodes": "PUSH20 0x0 ADDRESS EQ PUSH1 0x80 PUSH1 0x40 MSTORE PUSH0 PUSH0 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xD3 RETF 0xEB EXTCODESIZE 0x29 DUP7 JUMPDEST SWAP4 MULMOD DUP15 0xDD 0xDA 0xB7 AND 0xB2 0xC5 TSTORE 0x23 SHL EXTCODESIZE 0x22 SWAP10 CALLCODE 0xBE PUSH27 0x4B1CF5B95B25764736F6C634300081E0033000000000000000000 ",
+			"sourceMap": "1120:18220:2:-:0;;;;;;;;"
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "17000",
+				"executionCost": "92",
+				"totalCost": "17092"
+			},
+			"internal": {
+				"_affineFromJacobian(uint256,uint256,uint256)": "infinite",
+				"_isProperSignature(bytes32,bytes32)": "infinite",
+				"_jAdd(struct P256.JPoint memory,uint256,uint256,uint256)": "infinite",
+				"_jAddPoint(struct P256.JPoint memory,struct P256.JPoint memory)": "infinite",
+				"_jDouble(uint256,uint256,uint256)": "infinite",
+				"_jDoublePoint(struct P256.JPoint memory)": "infinite",
+				"_jMultShamir(struct P256.JPoint memory[16] memory,uint256,uint256)": "infinite",
+				"_preComputeJacobianPoints(uint256,uint256)": "infinite",
+				"_rip7212(bytes32,bytes32,bytes32,bytes32,bytes32)": "infinite",
+				"_tryVerifyNative(bytes32,bytes32,bytes32,bytes32,bytes32)": "infinite",
+				"isValidPublicKey(bytes32,bytes32)": "infinite",
+				"recovery(bytes32,uint8,bytes32,bytes32)": "infinite",
+				"verify(bytes32,bytes32,bytes32,bytes32,bytes32)": "infinite",
+				"verifyNative(bytes32,bytes32,bytes32,bytes32,bytes32)": "infinite",
+				"verifySolidity(bytes32,bytes32,bytes32,bytes32,bytes32)": "infinite"
+			}
+		},
+		"methodIdentifiers": {}
+	},
+	"abi": []
+}

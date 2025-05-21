@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "RSA PKCS#1 v1.5 signature verification implementation according to https://datatracker.ietf.org/doc/html/rfc8017[RFC8017]. This library supports PKCS#1 v1.5 padding to avoid malleability via chosen plaintext attacks in practical implementations. The padding follows the EMSA-PKCS1-v1_5-ENCODE encoding definition as per section 9.2 of the RFC. This padding makes RSA semantically secure for signing messages. Inspired by https://github.com/adria0/SolRsaVerify/blob/79c6182cabb9102ea69d4a2e996816091d5f1cd1[Adrià Massanet's work] (GNU General Public License v3.0). _Available since v5.1._",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"lib/openzeppelin-contracts/contracts/utils/cryptography/RSA.sol": "RSA"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"lib/openzeppelin-contracts/contracts/utils/Panic.sol": {
+			"keccak256": "0xf7fe324703a64fc51702311dc51562d5cb1497734f074e4f483bfb6717572d7a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c6a5ff4f9fd8649b7ee20800b7fa387d3465bd77cf20c2d1068cd5c98e1ed57a",
+				"dweb:/ipfs/QmVSaVJf9FXFhdYEYeCEfjMVHrxDh5qL4CGkxdMWpQCrqG"
+			]
+		},
+		"lib/openzeppelin-contracts/contracts/utils/cryptography/RSA.sol": {
+			"keccak256": "0x54ccb5ac41fd2ee33b30742c3c92183ff756b109039e74eba563412628737961",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e4e26c5bdfedbbab6634fb0a8941eb7f0e5c01711e03f93841dff060f3ab92c6",
+				"dweb:/ipfs/QmXWfBpUENkn4X3dMHN4CGD1dwfENsJ7NcPr2sthUC7Xp6"
+			]
+		},
+		"lib/openzeppelin-contracts/contracts/utils/math/Math.sol": {
+			"keccak256": "0x1225214420c83ebcca88f2ae2b50f053aaa7df7bd684c3e878d334627f2edfc6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6c5fab4970634f9ab9a620983dc1c8a30153981a0b1a521666e269d0a11399d3",
+				"dweb:/ipfs/QmVRnBC575MESGkEHndjujtR7qub2FzU9RWy9eKLp4hPZB"
+			]
+		},
+		"lib/openzeppelin-contracts/contracts/utils/math/SafeCast.sol": {
+			"keccak256": "0x195533c86d0ef72bcc06456a4f66a9b941f38eb403739b00f21fd7c1abd1ae54",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b1d578337048cad08c1c03041cca5978eff5428aa130c781b271ad9e5566e1f8",
+				"dweb:/ipfs/QmPFKL2r9CBsMwmUqqdcFPfHZB2qcs9g1HDrPxzWSxomvy"
+			]
+		}
+	},
+	"version": 1
+}
