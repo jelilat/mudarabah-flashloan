@@ -1,0 +1,29 @@
+{
+  "name": "relayer-server",
+  "version": "1.0.0",
+  "description": "Flash loan relayer server",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alchemy": "^0.16.9",
+    "alchemy-sdk": "^3.5.9",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "fs": "^0.0.1-security",
+    "viem": "^2.7.9",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.24",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
