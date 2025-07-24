@@ -66,7 +66,6 @@ contract Mizan is Ownable {
     using SafeERC20 for IERC20;
 
     // Events
-    event Step(string message);
     event Staked(address indexed user, uint256 amount, uint256 depositTokens);
     event Unstaked(address indexed user, uint256 amount, uint256 depositTokens);
 
@@ -199,28 +198,12 @@ contract Mizan is Ownable {
         FlashLoan.FlashLoanMeta calldata meta,
         bytes calldata signature
     ) external {
-        emit Step("Starting requestFlashLoan");
-        emit Step("Checking loan token");
         require(_loanToken != address(0), "Invalid loan token");
-        emit Step("Loan token check passed");
-
-        emit Step("Checking loan amount");
         require(loanAmount > 0, "Invalid loan amount");
-        emit Step("Loan amount check passed");
-
-        emit Step("Checking profits");
         require(meta.profits.length > 0, "No profit metadata");
-        emit Step("Profits check passed");
-
-        emit Step("Checking expiry");
         require(block.timestamp <= meta.expiry, "Expired");
-        emit Step("Expiry check passed");
-
-        emit Step("Checking nonce");
         require(!usedNonces[meta.nonce], "Nonce used");
-        emit Step("Nonce check passed");
-
-        emit Step("Calling FlashLoan.borrow");
+        
         bool success = FlashLoan.borrow(
             address(this),
             relayer,
@@ -232,7 +215,6 @@ contract Mizan is Ownable {
             signature
         );
         require(success, "FlashLoan: execution failed");
-        emit Step("Flash loan execution completed");
     }
 
     // Pure functions for hashing and encoding
