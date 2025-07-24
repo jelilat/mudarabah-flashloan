@@ -1,4 +1,5 @@
-// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: Apache-2.0
+
 pragma solidity ^0.8.19;
 
 import "openzeppelin-contracts/contracts/token/ERC20/IERC20.sol";
@@ -27,8 +28,6 @@ contract BorrowerStrategy {
     // Amount of profit to generate (for testing)
     uint256 public immutable profitAmount;
 
-    event DummyEvent(string message);
-
     constructor(address _mizan, address _profitToken, uint256 _profitAmount) {
         require(_mizan != address(0), "Invalid mizan address");
         require(_profitToken != address(0), "Invalid profit token");
@@ -45,8 +44,6 @@ contract BorrowerStrategy {
         uint256 loanAmount
     ) external returns (bool) {
         require(msg.sender == address(mizan), "Only mizan");
-        // emit a dummy event
-        emit DummyEvent("executeStrategy");
         // Simulate arbitrage by minting profit tokens to this contract
         // In a real scenario, this would be the actual arbitrage logic
         // IERC20(profitToken).transfer(address(this), profitAmount);
@@ -67,7 +64,6 @@ contract BorrowerStrategy {
         FlashLoan.FlashLoanMeta calldata meta,
         bytes calldata signature
     ) external {
-        emit DummyEvent("requestFlashLoan");
         mizan.requestFlashLoan(loanToken, loanAmount, meta, signature);
     }
 }
